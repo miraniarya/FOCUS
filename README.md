@@ -82,15 +82,3 @@ The `main.py` file serves as the core of the system, offering the following func
 6. All ports except those listed in `Whitelisted_Ports.txt` are closed.  
 7. The system runs continuously in the background, closing any unauthorized open ports.  
 
-### Testing Scenario for Mini Hackathon  
-
-1. Install all required modules listed in `Requirements.txt`.  
-2. Upload a clear photo of the authorized person to the `auth` folder. This photo will be used for face recognition during whitelist management.  
-3. Run `PortScanner.py` to identify all currently active ports. Add these ports to `Whitelisted_Ports.txt` to avoid network errors during testing. 
-4. **Note on Whitelist Management**  
-  - Currently, the `Whitelisted_Ports.txt` file can be directly accessed and edited.  
-  - In future updates, this file will be encrypted and made inaccessible for direct edits.  
-  - Once encrypted, use `Whitelist.py` to manage the whitelist securely.  
-5. Run `PortOpener.py` to open a random port (e.g., a port not currently in use). This simulates an unauthorized port opened by a potential threat. Keep this process running.  
-6. Run `main.py` and select "1. Port Master". The system will detect and close any unauthorized ports, including the port opened in step 4.  
-
